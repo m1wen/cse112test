@@ -1,9 +1,13 @@
 language: node_js
-
 node_js:
-  - "6"
-
+- '6'
 before_script:
-  - npm install -g gulp
-
+- npm install -g gulp
 script: gulp
+deploy:
+  provider: heroku
+  api_key:
+    secure: parpXO26+Ha0GHR073+pU3yfe23aynNay4oSrxk7vZBymlogHGAzuCwatKJpI9KEf8CLY+/uO6mqIYRg6a04fPnaQB4jESdTpcCs1izc69UlwpgKwh0d2DKttgTpt/w6KZiBcrs+Evp6JvAv86ljekXHMUa2jOHY5gxb2xC0qqnAVja2M0R+Vt3u+aQjCfN+831SWlYHIblfEnbzZUKskqA3hi1VxGDmSyIRzFHv5gzmjn0PXIHqeIeNPCAofmu5litzpQZLDxBXw7NDL6D90a7/Ur5SM6zYRQ+aLugH0iV9V3u1HaxW6Hp7v9YXuqoH+qJ8rAnzfBBOHU+MLiW8acB4SC7I15jYCUg551sgqjPSyLOlT17vr4HOY4ZoqIQrnaykT/9zmiqfF8Kzvh+4idUsMlEUkUc2FzOpFzH+HdKYRIt1jOdZzSBRclALzg5EUWOP2zgPxgCgT5G67Lbw6Z6O9NX+kX8+BOKUCkp+vSgY97PA/Z9sn33KxrBeV39/7QIbxazymTIlQiEN8xsKuon/XankdaIFVqPl7JhPj6FgmdY2RFde8TXYklsClby6lHzio2imHl1GIXJz71rR+mnkzio/DT/XuDoo4nFWyc6vEAKFluwbSkbzstQNKK738Q/eyBuZjuAHBGeMZoX6oO162iy31+aeKjOkgAmVsbw=
+  app: cse112test
+  on:
+    repo: m1wen/cse112test
